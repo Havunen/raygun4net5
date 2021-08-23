@@ -1,4 +1,4 @@
-﻿namespace Mindscape.Raygun4Net.AspNetCore
+﻿namespace Havunen.Raygun4Net.Net5
 {
   public class RaygunSettings : RaygunSettingsBase
   {

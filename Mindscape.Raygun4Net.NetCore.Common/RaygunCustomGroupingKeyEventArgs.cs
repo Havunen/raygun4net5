@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Mindscape.Raygun4Net
+namespace Havunen.Raygun4Net
 {
   /// <summary>
   /// Can be used to create a custom grouping key for exceptions

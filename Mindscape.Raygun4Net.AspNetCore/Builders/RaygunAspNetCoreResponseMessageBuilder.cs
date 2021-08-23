@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Features;
 
-namespace Mindscape.Raygun4Net.AspNetCore.Builders
+namespace Havunen.Raygun4Net.Net5.Builders
 {
   public class RaygunAspNetCoreResponseMessageBuilder
   {

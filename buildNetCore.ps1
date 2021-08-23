@@ -36,14 +36,15 @@ task Init -depends Clean {
 
 task Compile -depends Init {
     exec { dotnet pack .\Mindscape.Raygun4Net.NetCore.Common\ --output build\NetCoreCommon --configuration Release }
-    move-item -Path $root\Mindscape.Raygun4Net.NetCore.Common\build\NetCoreCommon\* -Destination $build_dir_net_core_common
+   # move-item -Path $root\Mindscape.Raygun4Net.NetCore.Common\build\NetCoreCommon\* -Destination $build_dir_net_core_common
     
-    exec { dotnet pack .\Mindscape.Raygun4Net.NetCore\ --output build\NetCore --configuration Release }
-    move-item -Path $root\Mindscape.Raygun4Net.NetCore\build\NetCore\* -Destination $build_dir_net_core
+  # exec { dotnet pack .\Mindscape.Raygun4Net.NetCore\ --output build\NetCore --configuration Release }
+  #  move-item -Path $root\Mindscape.Raygun4Net.NetCore\build\NetCore\* -Destination $build_dir_net_core
     
     exec { dotnet pack .\Mindscape.Raygun4Net.AspNetCore\ --output build\AspNetCore --configuration Release }
-    move-item -Path $root\Mindscape.Raygun4Net.AspNetCore\build\AspNetCore\* -Destination $build_dir_aspnet_core
+  #  move-item -Path $root\Mindscape.Raygun4Net.AspNetCore\build\AspNetCore\* -Destination $build_dir_aspnet_core
 
+<#
     # Signed
     exec { dotnet pack .\Mindscape.Raygun4Net.NetCore.Common\ --output build\Signed\NetCoreCommon --configuration Sign }
     move-item -Path $root\Mindscape.Raygun4Net.NetCore.Common\build\Signed\NetCoreCommon\* -Destination $build_dir_signed_net_core_common
@@ -55,4 +56,6 @@ task Compile -depends Init {
     # Signed
     exec { dotnet pack .\Mindscape.Raygun4Net.AspNetCore\ --output build\Signed\AspNetCore --configuration Sign }
     move-item -Path $root\Mindscape.Raygun4Net.AspNetCore\build\Signed\AspNetCore\* -Destination $build_dir_signed_aspnet_core
+    
+#>
 }

@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Configurations>Debug;Release;Sign</Configurations>
+    <Platforms>AnyCPU</Platforms>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <Authors>Havunen</Authors>
+    <Description>Fork of RaygunClient library for targeting Net5 applications</Description>
+    <PackageId>Havunen.Raygun4Net.Net5.Common</PackageId>
+    <PackageVersion>6.5.0</PackageVersion>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://github.com/Havunen/raygun4net5/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Havunen/raygun4net5</PackageProjectUrl>
+  </PropertyGroup>
+</Project>

@@ -8,7 +8,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mindscape.Raygun4Net
+namespace Havunen.Raygun4Net
 {
   public abstract class RaygunClientBase
   {

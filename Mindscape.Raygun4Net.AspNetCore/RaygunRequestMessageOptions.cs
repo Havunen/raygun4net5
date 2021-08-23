@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Mindscape.Raygun4Net.Filters;
+using Havunen.Raygun4Net.Filters;
 
-namespace Mindscape.Raygun4Net.AspNetCore
+namespace Havunen.Raygun4Net.Net5
 {
   public class RaygunRequestMessageOptions
   {

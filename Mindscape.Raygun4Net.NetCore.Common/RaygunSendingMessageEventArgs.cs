@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace Mindscape.Raygun4Net
+namespace Havunen.Raygun4Net
 {
   /// <summary>
   /// Can be used to modify the message before sending, or to cancel the send operation.

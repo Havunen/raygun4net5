@@ -4,7 +4,4 @@
     <Configurations>Debug;Release;Sign</Configurations>
     <Platforms>AnyCPU</Platforms>
   </PropertyGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Mindscape.Raygun4Net.NetCore\Mindscape.Raygun4Net.NetCore.csproj" />
-  </ItemGroup>
 </Project>

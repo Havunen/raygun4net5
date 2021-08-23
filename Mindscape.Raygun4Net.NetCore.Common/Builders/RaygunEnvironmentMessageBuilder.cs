@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Globalization;
 
-namespace Mindscape.Raygun4Net
+namespace Havunen.Raygun4Net
 {
   public class RaygunEnvironmentMessageBuilder
   {

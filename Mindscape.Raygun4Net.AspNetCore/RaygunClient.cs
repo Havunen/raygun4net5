@@ -5,10 +5,10 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
-using Mindscape.Raygun4Net.AspNetCore.Builders;
-using Mindscape.Raygun4Net.Filters;
+using Havunen.Raygun4Net.Net5.Builders;
+using Havunen.Raygun4Net.Filters;
 
-namespace Mindscape.Raygun4Net.AspNetCore
+namespace Havunen.Raygun4Net.Net5
 {
   public class RaygunClient : RaygunClientBase
   {

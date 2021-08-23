@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Extensions;
-using Mindscape.Raygun4Net.Filters;
+using Havunen.Raygun4Net.Filters;
 
-namespace Mindscape.Raygun4Net.AspNetCore.Builders
+namespace Havunen.Raygun4Net.Net5.Builders
 {
   public class RaygunAspNetCoreRequestMessageBuilder
   {

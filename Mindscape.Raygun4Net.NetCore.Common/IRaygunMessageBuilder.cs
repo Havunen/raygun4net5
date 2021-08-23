@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Mindscape.Raygun4Net
+namespace Havunen.Raygun4Net
 {
   public interface IRaygunMessageBuilder
   {

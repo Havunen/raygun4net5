@@ -1,6 +1,6 @@
 using System.Collections;
 
-namespace Mindscape.Raygun4Net
+namespace Havunen.Raygun4Net
 {
   public class RaygunErrorMessage
   {

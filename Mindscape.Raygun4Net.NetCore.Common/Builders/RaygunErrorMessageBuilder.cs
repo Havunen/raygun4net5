@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Reflection;
 using System.Text;
 
-namespace Mindscape.Raygun4Net
+namespace Havunen.Raygun4Net
 {
   public class RaygunErrorMessageBuilder
   {

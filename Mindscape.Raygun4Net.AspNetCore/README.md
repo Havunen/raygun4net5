@@ -8,12 +8,12 @@ You can also find the API key by clicking the "Application Settings" button in t
 
 Namespace
 =========
-The main classes can be found in the Mindscape.Raygun4Net namespace.
+The main classes can be found in the Havunen.Raygun4Net namespace.
 
 Usage
 ======
 
-In your project.json file, add "Mindscape.Raygun4Net.AspNetCore": "6.5.0" to your dependencies.
+In your project.json file, add "Havunen.Raygun4Net.Net5": "6.5.0" to your dependencies.
 
 Run dotnet.exe restore or restore packages within Visual Studio to download the package.
 
@@ -28,7 +28,7 @@ Add the following code to your appsettings.json (if you're using another type of
 To configure the RaygunAspNetCoreMiddleware to handle exceptions that have been triggered and send unhandled exceptions automatically.
 
 In Startup.cs:
-  1. Add using Mindscape.Raygun4Net; to your using statements.
+  1. Add using Havunen.Raygun4Net; to your using statements.
   2. Add app.UseRaygun(); to the Configure method after any other ExceptionHandling methods e.g. app.UseDeveloperExceptionPage() or app.UseExceptionHandler("/Home/Error").
   3. Add services.AddRaygun(Configuration); to the ConfigureServices method.
 
@@ -283,7 +283,7 @@ using System.Linq;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using Mindscape.Raygun4Net.Filters;
+using Havunen.Raygun4Net.Filters;
 
 public class RaygunJsonDataFilter : IRaygunDataFilter
 {
