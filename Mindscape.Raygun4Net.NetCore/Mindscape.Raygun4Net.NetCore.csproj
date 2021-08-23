@@ -3,11 +3,12 @@
     <RootNamespace>Mindscape.Raygun4Net.NetCore</RootNamespace>
     <AssemblyName>Mindscape.Raygun4Net.NetCore</AssemblyName>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <TargetFrameworks>netstandard1.6;netstandard2.0</TargetFrameworks>
+    <TargetFramework>net5.0</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Configurations>Debug;Release;Sign</Configurations>
     <Platforms>AnyCPU</Platforms>
   </PropertyGroup>
+  
   <!-- NuGet Options -->
   <PropertyGroup>
     <Authors>Raygun</Authors>
@@ -19,29 +20,20 @@
     <PackageProjectUrl>https://github.com/MindscapeHQ/raygun4net</PackageProjectUrl>
     <PackageIconUrl>https://app.raygun.com/Content/Images/nuget-icon.png</PackageIconUrl>
   </PropertyGroup>
+  
   <ItemGroup>
     <Compile Include="RaygunClient.cs" />
     <Compile Include="RaygunSettings.cs" />
     <Compile Include="Properties\*.cs" />
   </ItemGroup>
+  
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Sign|AnyCPU' ">
     <PackageId>Mindscape.Raygun4Net.NetCore.Signed</PackageId>
     <AssemblyOriginatorKeyFile>Raygun4Net.NetCore.snk</AssemblyOriginatorKeyFile>
 	<SignAssembly>true</SignAssembly>
 	<Optimize>true</Optimize>
   </PropertyGroup>
-  <!-- .NET Standard 2.0 references, compilation flags and build options -->
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0'">
-    <DefineConstants>NETCORE;NETSTANDARD;NETSTANDARD2_0</DefineConstants>
-  </PropertyGroup>
-  <!-- .NET Standard 1.6 references, compilation flags and build options -->
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.6'">
-    <DefineConstants>NETCORE;NETSTANDARD;NETSTANDARD1_6</DefineConstants>
-  </PropertyGroup>
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.6'">
-    <PackageReference Include="System.ComponentModel" Version="4.3.0" />
-    <PackageReference Include="System.Diagnostics.StackTrace" Version="4.0.1" />
-  </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\Mindscape.Raygun4Net.NetCore.Common\Mindscape.Raygun4Net.NetCore.Common.csproj" />
   </ItemGroup>
